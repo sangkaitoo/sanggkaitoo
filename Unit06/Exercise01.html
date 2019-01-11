@@ -160,5 +160,67 @@
 			</form>
 		</div>
 	</div>
+	<a class="up" style="" href="#" title="Back to Top"><img width="20px;" src="../up.jpg"></a>
+	<div class="fb-livechat">
+		<div class="ctrlq fb-overlay"></div>
+		<div class="fb-widget">
+			<div class="ctrlq fb-close"></div>
+			<div class="fb-page" data-href="https://www.facebook.com/sanggkaitooo" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"></div>
+			<div class="fb-credit">
+				<a href="https://www.facebook.com/sanggkaitoo" target="_blank">Powered by Sang Kaito</a>
+			</div>
+			<div id="fb-root"></div>
+		</div>
+		<a href="https://m.me/sanggkaitooo" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button">
+			<div class="bubble">1</div>
+			<div style="font-family: arial" class="bubble-msg">Bạn cần hỗ trợ?</div>
+		</a>
+	</div>
+	<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			function detectmob() {
+				if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			var t = {
+				delay: 125,
+				overlay: $(".fb-overlay"),
+				widget: $(".fb-widget"),
+				button: $(".fb-button")
+			};
+			setTimeout(function() {
+				$("div.fb-livechat").fadeIn()
+			}, 8 * t.delay);
+			if (!detectmob()) {
+				$(".ctrlq").on("click", function(e) {
+					e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+						bottom: 0,
+						opacity: 0
+					}, 2 * t.delay, function() {
+						$(this).hide("slow"), t.button.show()
+					})) : t.button.fadeOut("medium", function() {
+						t.widget.stop().show().animate({
+							bottom: "30px",
+							opacity: 1
+						}, 2 * t.delay), t.overlay.fadeIn(t.delay)
+					})
+				})
+			}
+		});
+	</script>
+	<div class="hotline">
+		<div id="phonering-alo-phoneIcon" class="phonering-alo-phone phonering-alo-green phonering-alo-show">
+			<div class="phonering-alo-ph-circle"></div>
+			<div class="phonering-alo-ph-circle-fill"></div>
+			<div class="phonering-alo-ph-img-circle">
+				<a class="pps-btn-img " title="Liên hệ" href="tel:0988227905"> <img src="https://3.bp.blogspot.com/-jipOkVbgvtk/WPd_CdNwOoI/AAAAAAAAEn0/iYoBqhrSHWgSGDOiEvvEzTYa-khhJt9NACLcB/s1600/v8TniL3.png" alt="Liên hệ" width="50" class="img-responsive"/> </a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
