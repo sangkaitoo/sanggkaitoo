@@ -1,0 +1,39 @@
+.border {
+	float: left;
+	height: 135px;
+	width: 115px !important;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	margin: 5px;
+}
+.border:hover {
+	border-color: orange;
+}
+.img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.phone {
+	text-align: center;
+}
+a {
+	color: orange;
+	text-decoration: none;
+}
+a:hover {
+	color : #71B2E4;
+}
+a, p {
+	font-family: arial;
+	font-size: 12px;
+}
+.price {
+	font-weight: bold; 
+	color: red;
+	text-align: center;
+}
+.price:hover {
+	color: gray;
+}

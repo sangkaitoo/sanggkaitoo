@@ -1,0 +1,197 @@
+body {
+	background-image: url(../../img3,4/tuyet.jpg); 
+	background-repeat: repeat;
+}
+
+#bg {
+	margin : auto;
+	background : white;
+	width: 810px;
+	height: 1300px;
+}
+
+#img {
+	margin: auto;
+	margin-top: 0px; 
+	height: 350px;
+	width: 800px;
+	background-image: url(../../img3,4/123.jpg);
+}
+
+ul {
+	background: #434343;
+	height: 30px;
+}
+
+#item {
+	margin: auto;
+	margin-top: -16px;
+	height: 30px;
+	width: 800px;
+}
+
+
+.item1 {
+	margin-left: -40px;
+}
+
+.item {
+	margin-top: 4px;
+	line-height: 20px;
+	list-style: none;
+	float: left;
+	padding-right: 8px;
+	padding-left: 5px;
+	border-style: groove;
+	border-color: gray;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+.item a {
+	color: orange;
+}
+
+.item:hover {
+	background: gray;
+}
+
+.line1 {
+	margin : auto;
+	background: orange;
+	height: 2px;
+	width: 800px;
+}
+
+#line2 {
+	margin : auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #434343;
+	height: 2px;
+	width: 800px;
+}
+
+#first {
+	margin-left: 5px;
+	float: left;
+}
+
+#menu{
+	border : 1px;
+	border-color: black;
+	border-style: solid;
+	width: 147px;
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: gray;
+}
+
+#item a:hover {
+	color : white;
+}
+a p:hover {
+	color: gray;
+}
+
+a, p {
+	color : black;
+	line-height: 23px;
+	margin: auto;
+	margin-left: 5px; 
+	font-family: arial;
+	font-size: 12px
+}
+
+.bg {
+	background-image: url(../../img3,4/menu_bar.gif); 
+}
+
+.title {
+	color: white;
+	line-height: 25px;
+}
+
+#second {
+	float: left;
+	margin-left: 5px;
+	width: 485px; 
+}
+
+#third {
+	float: left;
+	float: right;
+	margin-right: 5px; 
+}
+
+.content1 {
+	margin-top: 20px;
+	background-image: url(../../img3,4/main_bar_left.gif);
+	background-size: cover;
+	height: 26px;
+	background-repeat: no-repeat;
+}
+
+.content2 {
+	margin-top: 50px;
+	background-image: url(../../img3,4/main_bar_right.gif);
+	background-size: cover;
+	height: 26px;
+	background-repeat: no-repeat;
+}
+.content2 {
+
+}
+
+.img {
+	width: 157px;
+	height: 110px;
+	float: left;
+	border: 1px;
+	border-color: black;
+	border-style: double;
+}
+
+.img1 {
+	width: 157px;
+	height: 110px;
+	float: right;
+	border: 1px;
+	border-color: black;
+	border-style: double;
+	margin-top: -115px;
+}
+
+
+.titlecontent {
+	color: white;
+	line-height: 26px;
+}
+
+.titlemain {
+	color: orange; 
+	margin-left: 0px;
+	margin-top: -3px;
+}
+
+.titlemain1 {
+	color: orange;
+	margin-left: 357px;
+
+}
+
+#seacond p {
+	line-height: 20px;
+	text-align: justify;
+}
+
+.Chitiet {
+	float: left;
+	color: orange;
+}

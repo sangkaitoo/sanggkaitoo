@@ -1,0 +1,41 @@
+#item {
+
+}
+
+.check {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+a {
+	margin-left: 15px; 
+	margin-right: 50px; 
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a, p {
+	font-family: arial;
+	font-size: 12px;
+}
+
+.check1 {
+	float: left;
+}
+
+.name1 a{
+	line-height: 40px;
+	margin-left: 8px;
+	font-weight: bold;
+}
+
+.sale {
+	margin: auto;
+}

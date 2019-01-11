@@ -1,0 +1,163 @@
+#login {
+	background-color: #f7f7f7;
+	width: 400px;
+	height: 500px;
+	border: 1px none black;
+	margin: auto;
+	border-radius: 2px;
+	box-shadow: 0px 0px 9px black;
+}
+
+.header {
+	position: relative;
+}
+
+.button1 {
+	margin: auto;
+}
+
+.buttonlogin1 {
+	background-color: #538ac5;
+	width: 330px;
+	height: 50px;
+	display: block;
+	border: 1px none black;
+	border-radius: 5px;
+	margin-top: 30px;
+
+}
+
+div>p {
+	float: left;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20px;
+	display: block;
+	margin-left: 32px;
+}
+
+i {
+	width: 17px;
+	margin: auto;
+	position: absolute;
+	top: 23px;
+	right: 30px;
+	opacity: 0.2;
+}
+
+.buttonlogin2 {
+	background-color: #5db1d3;
+	width: 330px;
+	height: 50px;
+	display: block;
+	border: 1px none black;
+	border-radius: 5px;
+	margin-top: 25px;
+
+}
+
+.content>input {
+	width: 330px;
+	height: 40px;
+	display: block;
+	border: 1px solid gray;
+	border-radius: 5px;
+	opacity: 0.5;
+	margin: auto;
+}
+
+.content {
+	margin: auto;
+	width: 400px;
+	height: 140px;
+}
+
+
+
+.hr1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.content>p {
+	font-size: 13px;
+	display: block;
+}
+
+.content>p>a {
+	color: #7694C7;
+	text-decoration: none;
+}
+
+button>p {
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+}
+
+.footer {
+	margin: auto;
+}
+
+.forgot {
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+
+.forgot>a {
+	font-weight: bold;
+	font-family: arial;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	display: block;
+	color: #8A8A8A;
+}
+
+.login1 {
+	float: right;
+	margin-right: 25px;
+	margin-top: 13px;
+}
+
+.login2 {
+	width: 70px;
+	height: 40px;
+	background-color:  #CA5B54;
+	border: 1px none black;
+	border-radius: 5px;
+}
+
+.login2>p {
+	margin: auto;
+}
+
+.input2 {
+	margin-top: 10px !important;
+}
+
+.content>input:hover {
+	border: 1px solid blue;
+	box-shadow: 0px 0px 20px blue;
+}
+
+.content>input {
+	padding-left: 5px; 
+}
+
+i:hover {
+	opacity: 1;
+}
+
+.buttonlogin1:hover {
+	box-shadow: 0px 0px 20px #538ac5;
+}
+
+.buttonlogin2:hover {
+	box-shadow: 0px 0px 20px #5db1d3;
+}
+
+.login2:hover {
+	box-shadow: 0px 0px 20px #CA5B54;
+}

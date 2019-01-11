@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<style type="text/css">
+	#menu {
+		padding-left: 0;
+		height: 42px;
+		background: green;
+	}
+
+	.item {
+		float: left;
+		list-style: none;
+		padding-left:  20px;
+		padding-right: 20px;
+		line-height: 42px;
+	}
+
+	.item>a {
+		color : #fff;
+		text-orientation: none;
+	}
+
+	.submenu {
+		display: none;
+		padding-left: 0;
+		width: 160px;
+		background: green;
+		position: absolute
+	}
+
+	.item:hover .submenu {
+		display: block;
+	}
+
+	.submenu a {
+		color: white;
+		list-style: none;
+	}
+
+</style>
+</head>
+<body>
+	<ul id="menu">
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Courses <i class="fas fa-caret-down"></i></a>
+			<ul class="submenu">
+				<li>
+					<a href="#">Java</a>
+				</li>
+				<li>
+					<a href="#">PHP</a>
+				</li>
+				<li>
+					<a href="#">Front end</a>
+				</li>
+			</ul>
+		</li>
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+	</ul>
+</body>
+</html>

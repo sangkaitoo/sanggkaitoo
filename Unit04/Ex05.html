@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.a {
+			position: relative;
+			background: red;
+			height: 100px;
+			width: 100px;
+			top: 50px;
+			left: 50px;
+			z-index: 5;
+		}
+
+		.b {
+			position: fixed;
+			background: green;
+			height: 100px;
+			width: 100px;
+			top: 30px;
+			left: 50px;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body style="height: 1000px">
+	<div class="a"></div>
+	<div class="b"></div>
+</body>
+</html>

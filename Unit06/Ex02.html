@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<style type="text/css">
+	@keyframes pcrotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.circle i {
+		position: relative;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 1rem;
+		border: 2px solid;
+		border-radius: 50%;
+		transition: 0.2s ease-in-out;
+		cursor: pointer;
+		margin: 0 10px;
+	}
+
+	.circle i::after {
+		content: "";
+		border: 2px dashed;
+		border-radius: 50%;
+		position: absolute;
+		top: -2px;
+		bottom: -2px;
+		left: -2px;
+		right: -2px;
+	}
+
+	.circle i[class~="fa-twitter"] {
+		color: #fe0002;
+		border-color: #fe0002;
+	}
+
+	.circle i[class~="fa-twitter"]::after {
+		border-color: #fe0002;
+	}
+
+	.circle i[class~="fa-instagram"] {
+		color: #7fc142;
+		border-color: #7fc142;
+	}
+
+	.circle i[class~="fa-instagram"]::after {
+		border-color: #7fc142;
+	}
+
+	.circle i[class~="fa-facebook-f"] {
+		color: #0089ff;
+		border-color: #0089ff;
+	}
+
+	.circle i[class~="fa-facebook-f"]::after {
+		border-color: #0089ff;
+	}
+
+	.circle i[class~="fa-snapchat-ghost"] {
+		color: #222;
+		border-color: #222;
+	}
+
+	.circle i[class~="fa-snapchat-ghost"]::after {
+		border-color: #222;
+	}
+
+	.circle i:hover {
+		border-color: transparent;
+	}
+
+	.circle i:hover::after {
+		-webkit-animation-name: pcrotate; 
+		animation-name: pcrotate;
+		-webkit-animation-duration: 5s;
+		animation-duration: 5s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+</style>
+</head>
+<body>
+	<div class="circle">
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-twitter"></i>
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-snapchat-ghost"></i>
+	</div>
+</body>
+</html>
