@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 08</title>
+</head>
+<body style="text-align: center;">
+	<h2>Đề bài : Viết chương trình tính tổng S = 1 /1! + 2 /2! + ….+ n / n! với n nguyên dương được nhập từ bàn phím.</h2>
+	<form>
+		<span>n = </span>
+		<span><input id="number" type="number" name="n" placeholder="Nhập số nguyên dương n" onkeyup="check()"></span>
+		<div style="color: red; margin-top: 5px" id="notification"></div>
+	</form>
+	<button style="margin-top: 5px;" onclick="answer()">Kết quả</button>
+
+	<script type="text/javascript">
+		function check() {
+			var n = document.getElementById('number').value
+			var noti = document.getElementById('notification')
+			if (n <= 0 || n == '') {
+				noti.innerHTML = "Bạn phải nhập số > 0!"
+			} else 
+				noti.innerHTML = ""
+		}
+		function answer() {
+			var n = document.getElementById('number').value
+			if (n <= 0) {
+				alert("Bạn phải nhập số lớn hơn 0!")
+			}
+			else if (n == null) {
+				alert("Bạn chưa nhập số!")
+			} 
+			else {
+				var s = 0;
+				var giaiThua = 1;
+				for (var i = 1; i <= n; i++) {
+					giaiThua *= i;
+            		s += (i/giaiThua);
+				}
+				alert("Đáp án là : " + s)
+			}
+		}
+	</script>
+</body>
+</html>

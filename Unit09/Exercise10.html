@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 01</title>
+</head>
+<body style="text-align: center">
+	<h2>Đề bài : Viết chương trình đếm và in ra số lượng các số nguyên chia hết cho 3 hoặc 7 nằm trong đoạn 1 đến 100.</h2>
+	<button onclick="answer()">Hiện đáp án</button>
+	<script type="text/javascript">
+		function answer() {
+			var dem = 0
+			for (var i = 0; i <= 100; i++) {
+				if (i % 3 == 0 || i % 7 == 0){
+					dem++
+				}
+			}
+			alert("Có " + dem + " số chia hết cho 3 hoặc 7 trong đoạn từ 1 đến 100")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+tr {
+	background: #A1AFD5;
+}
+
+tr>td:last-child {
+	height: 35px;
+	width: 410px;
+	padding-left: 15px;
+}
+
+tr>td:first-child {
+	height: 35px;
+	width: 40px;
+	text-align: center;
+}
+
+tr:hover {
+	background: #49DC69;
+}
+
+span {
+	padding-right: 10px;
+}

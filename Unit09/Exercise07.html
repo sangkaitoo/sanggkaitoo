@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 07</title>
+</head>
+<body style="text-align: center;">
+	<h2>Đề bài : Viết chương trình nhập vào 3 số M, N, K từ bàn phím. Tính tổng các số chia hết cho K trong khoảng từ N đến M.</h2>
+	<form>
+		<p><span>N = </span>
+			<span><input id="number" type="number" name="n" placeholder="Nhập số N"></span>
+		</p>
+		<div style="color: red; margin-top: 5px" id="notification"></div>
+		<p>
+			<span>M = </span>
+			<span><input id="number1" type="number" name="n" placeholder="Nhập số M" onkeyup="check1()"></span>
+		</p>
+		<div style="color: red; margin-top: 5px" id="notification1"></div>
+		<p>
+			<span>K = </span>
+			<span><input id="number2" type="number" name="n" placeholder="Nhập số K" onkeyup="check2()"></span>
+		</p>
+		<div style="color: red; margin-top: 5px" id="notification2"></div>
+	</form>
+	<button style="margin-top: 5px;" onclick="answer()">Kết quả</button>
+
+	<script type="text/javascript" src="js/Exercise07.js"></script>
+</body>
+</html>

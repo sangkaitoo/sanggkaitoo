@@ -1,0 +1,64 @@
+body {
+	background-image: url(../img/woof.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: arial;
+}
+
+#bark {
+	padding-top: 100px;
+	width: 600px;
+	margin: auto;
+}
+
+button {
+	background-color: inherit; 
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 0px;
+	padding: 5px 10px ;
+	background: #666666;
+	line-height: 20px;
+	color: #fff;
+	width: 60px;
+	transition: 0.3s;
+}
+
+.active {
+	background: #fff;
+	color: #222;
+}
+
+p {
+	margin: 0;
+}
+
+span {
+}
+
+.text {
+	width: 600px;
+	height: 130px;
+	background: #fff;
+	transition: 0.5s;
+}
+
+.text>h3 {
+	margin: 0;
+	padding-left: 10px;
+	line-height: 50px;
+}
+
+.text>p {
+	padding-left: 10px;
+}
+
+#Tab2 {
+	margin-top: -130px;
+}
+
+#Tab3 {
+	margin-top: -130px;
+}
+

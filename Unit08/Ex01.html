@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+
+	<form>
+		<input id="input" type="text" name="">
+	</form>
+
+	<button id="click">Add</button>
+
+	<table class="cotent">
+		<tbody>
+		</tbody>
+	</table>
+
+	<script type="text/javascript">
+
+		var i = 1;
+		document.getElementById('click').addEventListener('click', function() {
+
+			var result = document.getElementById('')
+
+			var input = document.getElementById('input');
+
+			result.innerHTML +=`<tr>
+				<td>` + input.value + `</td>
+				<td><button onclick= "funDelete(` + i + `)"">Delete</button></td>
+			</tr>`;
+
+			input.value= "";
+			i++
+
+		})
+
+		function funDelete(id) {
+			document.getElementById(id).remove()
+		}
+	</script>
+</body>
+</html>

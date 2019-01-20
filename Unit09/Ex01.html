@@ -1,0 +1,28 @@
+	
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function load(){
+    var button1 = document.getElementById('button1');
+    var button2 = document.getElementById('button2');
+    button1.url = "http://zentgroup.net";
+    button2.url = "http://www.fb.com";
+    /*
+      Gán hàm buttonClick() cho sự kiện click bằng phương
+      thức addEventListener()
+    */
+    button1.addEventListener('click', buttonClick, false);
+    button2.addEventListener('click', buttonClick, false);
+    function buttonClick(){
+        window.location = this.url;
+    }
+}
+window.onload = load;
+</script>
+</head>
+<body>
+  <button id="button1">Visit Zentgroup.net</button>
+  <button id="button2">Visit Facebook</button>
+</body>
+</html>
