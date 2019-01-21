@@ -7,7 +7,6 @@ function showContent(id) {
 		contentshows[i].style.opacity = "0"
 	}
 	var contentshow = document.getElementById(id)
-	// contentshow.style.display = "block"
 	contentshow.style.opacity = "1"
 }
 

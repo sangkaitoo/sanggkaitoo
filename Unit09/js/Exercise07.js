@@ -26,10 +26,16 @@
 		var m = parseInt(document.getElementById('number1').value)
 		var k = parseInt(document.getElementById('number2').value)
 		var s = 0;
-		for (var i = n+1; i < m; i++) {
-			if (i % k == 0) {
-				s += i;
+		if (m <= n) {
+			alert('Bạn phải nhập m lớn hơn n')
+		} else if (k <= n || k >= m) {
+			alert('Bạn phải nhập k trong khoảng ' + n + " đến " + m + "!")
+		} else {
+			for (var i = n+1; i < m; i++) {
+				if (i % k == 0) {
+					s += i;
+				}
 			}
+			alert('Tổng các số chia hết cho ' + k + ' trong khoảng ' + n + ' đến ' + m + ' là : ' + s)
 		}
-		alert('Tổng các số chia hết cho ' + k + ' trong khoảng ' + n + ' đến ' + m + ' là : ' + s)
 	}

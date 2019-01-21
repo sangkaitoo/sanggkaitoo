@@ -2,11 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bài tập 01</title>
+	<title>Bài tập 10</title>
+	<style type="text/css">
+	#menu {
+		position: fixed;
+		bottom: 40px;
+		left: 40px;
+	}
+
+	#menu>a {
+		padding: 5px;
+	}
+
+	#menu>a>button:hover {
+		box-shadow: 0 0 10px black;
+	}
+</style>
 </head>
 <body style="text-align: center">
 	<h2>Đề bài : Viết chương trình đếm và in ra số lượng các số nguyên chia hết cho 3 hoặc 7 nằm trong đoạn 1 đến 100.</h2>
 	<button onclick="answer()">Hiện đáp án</button>
+	<div id="menu">
+		<a href="Exercise01.html"><button>Bài 1</button></a>
+		<a href="Exercise02.html"><button>Bài 2</button></a>
+		<a href="Exercise03.html"><button>Bài 3</button></a>
+		<a href="Exercise04.html"><button>Bài 4</button></a>
+		<a href="Exercise05.html"><button>Bài 5</button></a>
+		<a href="Exercise06.html"><button>Bài 6</button></a>
+		<a href="Exercise07.html"><button>Bài 7</button></a>
+		<a href="Exercise08.html"><button>Bài 8</button></a>
+		<a href="Exercise09.html"><button>Bài 9</button></a>
+	</div>	
+
 	<script type="text/javascript">
 		function answer() {
 			var dem = 0
