@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 02</title>
+	<link rel="stylesheet" type="text/css" href="css/Exercise02.css">
+</head>
+<body>
+	<h1>Validate Form</h1>
+	<div id="login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng ký</button>
+	</div>
+
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="container">
+				<div id="part1">
+					<p>Họ và tên</p>
+					<p>Giới tính</p>
+					<p>Email</p>
+					<p>Số điện thoại</p>
+					<p>Mật khẩu</p>
+					<p>Xác nhận mật khẩu</p>
+				</div>
+				<div id="part2">
+
+					<p><input onkeyup="checkname()" class="input" type="text" placeholder="Nhập họ tên..." name="uname" required></p>
+
+					<p class="radio">
+						<input type="radio" name="sex" required>Nam
+						<input type="radio" name="sex" required>Nữ
+						<input type="radio" name="sex" required>Khác
+					</p>
+
+					<p><input onkeyup="checkemail()"  class="input" type="email" placeholder="Nhập email..." name="email" required></p>
+
+					<p><input onkeyup="checkphone()" class="input" type="number" placeholder="Nhập số điện thoại...." name="number" required></p>
+
+					<p><input onkeyup="checkstrong()" class="input" type="password" name="psw" required></p>
+
+					<p><input onkeyup="checkpass()" class="input" type="password" name="cfpsw" required></p>
+
+				</div>
+
+				<div id="part3">
+					<p id="noti01">Yêu cầu nhập đầy đủ họ tên</p>
+					<p id="noti02">Yêu cầu chọn giới tính</p>
+					<p id="noti03">Yêu cầu nhập email</p>
+					<p id="noti04">Yêu cầu nhập số điện thoại</p>
+					<p id="noti05">Yêu cầu nhập mật khẩu</p>
+					<p id="noti06">Yêu cầu xác nhận đúng mật khẩu</p>
+				</div>
+				<div id="button">
+					<button onclick="check()" type="signup">Đăng ký</button>
+					<button id="clear" type="signup">Xóa trắng</button>
+				</div>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			</div>
+
+		</form>
+	</div>
+	<div id="menu">
+		<p>Bài tập</p>
+	</div>
+	<script type="text/javascript" src="js/Exercise02.js"></script>
+</body>
+</html>

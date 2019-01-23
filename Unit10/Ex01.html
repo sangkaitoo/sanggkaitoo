@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+</head>
+<body>
+
+  <form>
+    <input style="float: left;" id="input" onkeyup="check1()" type="text" name="">
+    <div id="noti"></div>
+  </form>
+
+  <button id="click">Add</button>
+
+  <table class="content">
+    <tbody id="result">
+    </tbody>
+  </table>
+  <p>
+    <span><a onclick="check()" href="#">Check all</a></span>
+    <span><a onclick="uncheck()" href="#">Uncheck all</a></span>
+  </p>
+
+
+  <button onclick="deleteAll()">Xóa ô đã chọn</button>
+  <script type="text/javascript">
+    function check1() {
+      var input = document.getElementById('input')
+      var noti = document.getElementById('noti')
+      if (input.value == "") {
+        noti.innerHTML = "Bạn chưa nhập text!"
+      } else 
+      noti.innerHTML = ""
+    }
+    var i = 1;
+    document.getElementById('click').addEventListener('click', function() {
+      var input = document.getElementById('input')
+      var noti = document.getElementById('noti')
+      if (input.value == '') {
+        alert("Bạn chưa nhập text")
+      } else {
+
+        var result = document.getElementById('result')
+
+        var input = document.getElementById('input');
+
+        result.innerHTML +=`<tr id="`+ i +`" >
+        <td><input type="checkbox" name="name" class="` + i + `"></td>
+        <td class="a">` + input.value + `</td>
+        <td><button onclick= "funEdit(` + i + `)"">Edit</button></td>
+        <td><button onclick= "funDelete(` + i + `)"">Delete</button></td>
+        </tr>`;
+
+        input.value= "";
+        i++
+      }
+    })
+
+    function funDelete(id) {
+      document.getElementById(id).remove()
+    }
+
+    function funEdit(id) {
+      var newtext = prompt('Mời bạn nhập text mới :')
+      document.getElementById(id).children[1].innerHTML = newtext
+    }
+
+    function check() {
+      var checkbox = document.getElementsByName('name')
+      for (var i = 0; i < checkbox.length; i++) {
+        checkbox[i].checked = true
+      }
+    }
+
+    function uncheck() {
+      var checkbox = document.getElementsByName('name')
+      for (var i = 0; i < checkbox.length; i++) {
+        checkbox[i].checked = false
+      }
+    }
+
+    function deleteAll() {
+      var checkbox = document.getElementsByName('name')
+      var x= checkbox.length
+
+      for (var i = x-1; i >=0 ; i--) {
+        if (checkbox[i].checked == true) {
+          checkbox[i].parentNode.parentNode.remove()
+        }
+      }
+    }
+  </script>
+</body>
+</html>
