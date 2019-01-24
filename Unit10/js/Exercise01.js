@@ -42,11 +42,14 @@ function before() {
 
 function auto() {
   var a = 0;
-  setInterval(function(){
+  var auto = setInterval(function(){
     for (var i = 0; i < check.length; i++) {
       if (check[i].checked) {
         a = i
       }
+    }
+    if (a == 9) {
+      a = -1
     }
     a++
     check[a].checked = true

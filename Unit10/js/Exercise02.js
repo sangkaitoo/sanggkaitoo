@@ -109,6 +109,17 @@ function checkpass() {
 	}
 }
 
+function checksex() {
+	var sex = document.getElementsByName('radio-group')
+	for (var i = 0; i < 3; i++) {
+		if (sex[i].checked) {
+			return true
+			break;
+		}
+	}
+	return false
+}
+
 function check() {
 	if (!checkname()) {
 		alert('Mời bạn nhập lại tên')
@@ -125,8 +136,26 @@ function check() {
 	else if (!checkpass()) {
 		alert('Mời bạn xác nhận lại mật khẩu')
 	}
+	else if (!checksex()) {
+		alert('Mời bạn chọn giới tính')
+	}
 	else {
 		alert('Đăng kí thành công')
+		document.getElementById('id01').style.display='none'
+		document.getElementsByName('uname')[0].value = ""
+		document.getElementsByName('email')[0].value = ""
+		document.getElementsByName('number')[0].value = ""
+		document.getElementsByName('psw')[0].value = ""
+		document.getElementsByName('cfpsw')[0].value = ""
+		for (var i = 0; i < 3; i++) {
+			document.getElementsByName('radio-group')[i].checked = false
+		}
+		noti01.style.opacity = "0"
+		noti02.style.opacity = "0"
+		noti03.style.opacity = "0"
+		noti04.style.opacity = "0"
+		noti05.style.opacity = "0"
+		noti06.style.opacity = "0"
 	}
 }
 
@@ -138,7 +167,13 @@ document.getElementById('clear').addEventListener('click', function() {
 		document.getElementsByName('psw')[0].value = ""
 		document.getElementsByName('cfpsw')[0].value = ""
 		for (var i = 0; i < 3; i++) {
-			document.getElementsByName('sex')[i].checked = false
+			document.getElementsByName('radio-group')[i].checked = false
 		}
+		noti01.style.opacity = "0"
+		noti02.style.opacity = "0"
+		noti03.style.opacity = "0"
+		noti04.style.opacity = "0"
+		noti05.style.opacity = "0"
+		noti06.style.opacity = "0"
 	}
 })

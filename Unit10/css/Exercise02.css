@@ -11,6 +11,10 @@ body>h1, #login {
 	float: left;
 }
 
+.animate, .container:last-child {
+	border-radius: 10px;
+}
+
 #part2 {
 	width: 45%;
 	float: left;
@@ -80,7 +84,6 @@ button:hover, .button:hover {
 	padding: 16px;
 }
 
-
 .modal {
 	display: none;
 	position: fixed;
@@ -119,7 +122,7 @@ button:hover, .button:hover {
 }
 
 .animate {
-	animation: animatezoom 0.6s
+	animation: animatezoom 0.6s;
 }
 
 @keyframes animatezoom {
@@ -132,20 +135,117 @@ button:hover, .button:hover {
 	box-shadow: 0 0 15px #b186f9
 }
 
-#menu {
+#menuhw {
 	position: fixed;
 	top: 30%;
 	right: 0;
-	width: 25px;
+	width: 5px;
 	height: 100px;
 	background: #f24b4b;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	text-align: center;
+	transition: 0.2s;
 }
 
-#menu>p {
-	width: 52px;
+#menuhw>a {
+	text-decoration: none;
+	color: #fff;
+	font-family: arial;
+	display: none;
+	float: right;
+	clear: both;
+	line-height: 50px;
 	margin: 0;
-	transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+	width: 100%;
+	text-align: center;
+}
+
+#menuhw:hover {
+	width: 80px;
+}
+
+#menuhw:hover a {
+	display: block;
+}
+
+#menuhw>a:first-child:hover {
+	background: #ed8989;
+	border-top-left-radius: 10px;
+}
+
+#menuhw>a:last-child:hover {
+	background: #ed8989;
+	border-bottom-left-radius: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.psw>a {
+    text-decoration: none;
+	color: #1ba8ff;
+}
+
+.radio>input {
+	border: 6px solid #b186f9;
+	cursor: pointer;
+	user-select: none;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.radio>label {
+	margin-right: 20px;
 }

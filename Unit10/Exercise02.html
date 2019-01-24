@@ -15,7 +15,7 @@
 
 		<form class="modal-content animate">
 			<div class="imgcontainer">
-				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Đóng">&times;</span>
 			</div>
 
 			<div class="container">
@@ -29,21 +29,24 @@
 				</div>
 				<div id="part2">
 
-					<p><input onkeyup="checkname()" class="input" type="text" placeholder="Nhập họ tên..." name="uname" required></p>
-
+					<p><input onfocusout="checkname()" class="input" type="text" placeholder="Nhập họ tên..." name="uname" title="Họ và tên không được chứa kí tự đặc biệt hoặc các chữ số" required></p>
+					 <!-- pattern="[^a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]{6,80}" -->
 					<p class="radio">
-						<input type="radio" name="sex" required>Nam
-						<input type="radio" name="sex" required>Nữ
-						<input type="radio" name="sex" required>Khác
+						<input type="radio" id="test1" name="radio-group" checked>
+						<label for="test1">Nam</label>
+						<input type="radio" id="test2" name="radio-group">
+						<label for="test2">Nữ</label>
+						<input type="radio" id="test3" name="radio-group">
+						<label for="test3">Khác</label>
 					</p>
 
-					<p><input onkeyup="checkemail()"  class="input" type="email" placeholder="Nhập email..." name="email" required></p>
+					<p><input onfocusout="checkemail()"  class="input" type="email" placeholder="Nhập email..." name="email" title="Nhập địa chỉ email đúng định dạng Example@gmail.com" required></p>
 
-					<p><input onkeyup="checkphone()" class="input" type="number" placeholder="Nhập số điện thoại...." name="number" required></p>
+					<p><input onfocusout="checkphone()" class="input" type="number" placeholder="Nhập số điện thoại...." title="Nhập đúng số điện thoại với 10 chữ số và bắt đầu bằng 09|03|07|08|05" name="number" required></p>
 
-					<p><input onkeyup="checkstrong()" class="input" type="password" name="psw" required></p>
+					<p><input onkeyup="checkstrong()" class="input" type="password" name="psw" placeholder="Nhập mật khẩu ít nhất 6 ký tự" title="Nhập mật khẩu lớn hơn 6 ký tự" required></p>
 
-					<p><input onkeyup="checkpass()" class="input" type="password" name="cfpsw" required></p>
+					<p><input onfocusout="checkpass()" class="input" type="password" name="cfpsw" placeholder="Xác nhận lại mật khẩu" title="Xác nhận lại mật khẩu" required></p>
 
 				</div>
 
@@ -58,17 +61,21 @@
 				<div id="button">
 					<button onclick="check()" type="signup">Đăng ký</button>
 					<button id="clear" type="signup">Xóa trắng</button>
+					<p>Khi bạn nhấn Đăng ký, bạn đã đồng ý với điều kiện sử dụng và chính sách của chúng tôi.</p>
 				</div>
 			</div>
 
 			<div class="container" style="background-color:#f1f1f1">
 				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Đã có tài khoản? Nhấn vào <a href="#">đây</a></span>
 			</div>
 
 		</form>
 	</div>
-	<div id="menu">
-		<p>Bài tập</p>
+	<div id="menuhw">
+		<!-- <p>Bài tập</p> -->
+		<a href="Exercise01.html">Bài 1</a>
+		<a href="Exercise02.html">Bài 2</a>
 	</div>
 	<script type="text/javascript" src="js/Exercise02.js"></script>
 </body>
