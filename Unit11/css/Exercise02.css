@@ -1,0 +1,127 @@
+body {
+}
+
+#wrapper {
+	width: 55%;
+	margin: 0 auto;
+}
+
+#wrapper1 {
+	width: 100%;
+	text-align: center;
+	background-color: #f44336;
+}
+
+#wrapper1>h3 {
+	color: #fff;
+	padding: 30px 0 5px 0;
+	margin: 0;
+}
+
+form {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+#wrapper1>form>input {
+	width: 75%;
+	line-height: 30px;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 10px;
+	border: none;
+}
+
+#wrapper1>form>button {
+	width: 23%;
+	line-height: 30px;
+	margin: 0 0 25px 0;
+	padding: 0;
+	background: #d9d9d9;
+	border: none;
+	color: grey;
+	cursor: pointer;
+}
+
+#wrapper-2 {
+	width: 100%;
+}
+
+.outside1, .outside2 {
+	width: 100%;
+}
+
+.outside2 {
+	background-color: #eeeeee;
+}
+
+.content {
+	width: 87%;
+	margin: 0 auto;
+	line-height: 35px;
+	position: relative;
+}
+
+.fa-check {
+	position: absolute;
+	left: -5%;
+	font-size: 0.8em;
+	line-height: 35px !important;
+	opacity: 0;
+}
+
+.fa-check-circle {
+	position: absolute;
+	right: -7%;
+	font-size: 0.6em;
+	line-height: 35px !important;
+	color: grey;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.fa-edit {
+	position: absolute;
+	right: 0%;
+	font-size: 0.6em;
+	line-height: 35px !important;
+	color: grey;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.fa-trash-alt {
+	position: absolute;
+	right: -3.3%;
+	font-size: 0.6em;
+	line-height: 35px !important;
+	color: grey;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.fa-check-circle:hover, .fa-edit:hover, .fa-trash-alt:hover {
+	opacity: 1;
+}
+
+.done {
+	text-decoration: line-through;
+	color: #fff;
+	background-color: #888888;
+}
+
+.done .fa-check, .done .fa-check-circle, .done .fa-edit, .done .fa-trash-alt{
+	opacity: 1;
+	color: #fff;
+}
+
+.time {
+	position: absolute;
+	right: 5%;
+	font-size: 0.8em;
+}
+
+
+.text-do {
+	cursor: pointer;
+}

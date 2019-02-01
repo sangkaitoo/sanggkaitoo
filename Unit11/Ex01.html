@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<select onchange="City(this)">
+		<option value="1">Hà Nội</option>		
+		<option value="2">Hồ Chí Minh</option>		
+	</select>
+	
+	<select id="Distric">
+		<option value="1">Quận Hai Bà Trưng</option>		
+		<option value="2">Quận Hoàn Kiếm</option>
+	</select>
+
+	<script type="text/javascript">
+		function City(x) {
+			if (x.value == 1) {
+				Distric.innerHTML = `
+				<option value="1">Quận Hai Bà Trưng</option>		
+				<option value="2">Quận Hoàn Kiếm</option>
+				`
+			}
+
+			else if (x.value == 2) {
+				Distric.innerHTML = `
+				<option value="1">Quận 1</option>		
+				<option value="2">Quận 2</option>
+				`
+			}
+		}
+	</script>
+</body>
+</html>
