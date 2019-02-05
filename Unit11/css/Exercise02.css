@@ -47,6 +47,26 @@ form {
 	width: 100%;
 }
 
+#menu {
+	width: 100%;
+	background: #f44336;
+	border-top: 1px solid #fff;
+}
+
+#menu>div {
+	width: 87%;
+	margin: 0 auto;
+	line-height: 35px;
+	color: #fff;
+	font-family: arial;
+	position: relative;
+}
+
+#menu>div>.menu2 {
+	position: absolute;
+	right: 8%;
+}
+
 .outside1, .outside2 {
 	width: 100%;
 }
@@ -124,4 +144,95 @@ form {
 
 .text-do {
 	cursor: pointer;
+	width: 
+}
+
+#input {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#button {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.timeDone {
+	position: absolute;
+	right: -33%;
+	font-size: 0.8em;
+	color: #222;
+}
+
+.content>div {
+	width: 77%;
+    display: inline-block;
+    overflow: auto;
+}
+
+.content {
+	height: 35px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 1px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
+
+#menuhw {
+	position: fixed;
+	top: 30%;
+	right: 0;
+	width: 5px;
+	height: 100px;
+	background: #f24b4b;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+	transition: 0.4s;
+}
+
+#menuhw>a {
+	text-decoration: none;
+	color: #fff;
+	font-family: arial;
+	display: none;
+	float: right;
+	clear: both;
+	line-height: 25px;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#menuhw:hover {
+	width: 80px;
+}
+
+#menuhw:hover a {
+	display: block;
+}
+
+#menuhw>a:first-child:hover {
+	border-top-left-radius: 10px;
+}
+
+#menuhw>a:hover {
+	background: #ed8989;
+}
+
+#menuhw>a:last-child:hover {
+	border-bottom-left-radius: 10px;
 }

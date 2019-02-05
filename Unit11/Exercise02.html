@@ -11,12 +11,25 @@
 	<div id="wrapper">
 		<div id="wrapper1">
 			<h3>My To Do List</h3>
-			<form >
-				<input id="input" type="text" name="do" placeholder="Title..."></input>
-				<button type="button" onclick="clickadd()">Add</button>
+			<form method="get">
+				<input id="input" onkeypress="check()" onkeyup="checkEnter()" type="text" name="do" placeholder="Title..."></input>
+				<button id="button" title="Add" type="button" onclick="clickadd()">Add</button>
 			</form>
 		</div>
+		<div id="menu">
+			<div>
+				<span class="menu1">LIST DO</span>
+				<span class="menu2">TIME ADD</span>
+			</div>
+		</div>
 		<div id="wrapper2"></div>
+	</div>
+
+	<div id="menuhw">
+		<a href="Exercise01.html">Bài 1</a>
+		<a href="Exercise02.html">Bài 2</a>
+		<a href="Exercise03.html">Bài 3</a>
+		<a href="Exercise04.html">Bài 4</a>
 	</div>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
