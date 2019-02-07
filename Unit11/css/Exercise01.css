@@ -1,0 +1,89 @@
+#Bar {
+	width: 70%;
+	margin: auto;
+}
+
+#Bar > img {
+	float: left;
+}
+
+#Bar >span {
+	float: right;
+	line-height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menuhw {
+	position: fixed;
+	top: 30%;
+	right: 0;
+	width: 5px;
+	height: 100px;
+	background: #f24b4b;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+	transition: 0.4s;
+}
+
+#menuhw>a {
+	text-decoration: none;
+	color: #fff;
+	font-family: arial;
+	display: none;
+	float: right;
+	clear: both;
+	line-height: 25px;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#menuhw:hover {
+	width: 80px;
+}
+
+#menuhw:hover a {
+	display: block;
+}
+
+#menuhw>a:first-child:hover {
+	border-top-left-radius: 10px;
+}
+
+#menuhw>a:hover {
+	background: #ed8989;
+}
+
+#menuhw>a:last-child:hover {
+	border-bottom-left-radius: 10px;
+}
