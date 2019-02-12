@@ -146,9 +146,21 @@ function checkForm3() {
 	} else if (input[2].value == "") {
 		swal("You need write your email!", "", "error");
 		return false;
+	} else if (!checkEmail(input[2].value)) {
+		swal("You need write your correct email!", "", "error");
+		return false;
 	} else if (input[3].value == "") {
 		swal("You need write your phone number!", "", "error");
 		return false;
 	}
 	return true;
+}
+
+function checkEmail(email) { 
+	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+	if (!filter.test(email)) { 
+		email.focus; 
+		return false; 
+	}
+	return true
 }
