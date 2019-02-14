@@ -75,6 +75,12 @@ $(".next").click(function(){
 		easing: 'easeInOutBack'
 	});
 }
+} else if ($('.4').eq(0).css('display') != 'none') {
+	if ($('input.agree')[0].value == 'on') {
+		submit()
+	} else {
+		swal("You need agree with us!", "", "error");
+	}
 }
 });
 
@@ -113,9 +119,9 @@ $(".previous").click(function(){
 	});
 });
 
-$(".submit").click(function(){
+function submit() {
 	swal("Done!", "", "success");
-})
+}
 
 function checkForm1() {
 	var input = $(".1>input")
