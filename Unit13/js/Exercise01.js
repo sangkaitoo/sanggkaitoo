@@ -63,3 +63,12 @@ $(window).scroll(function() {
 
 	}
 })
+
+// $('#scrollToTop').click(function(){ 
+// 	$('html,body').animate({ scrollTop: 0 }, 'slow');
+// 	return false; 
+// });
+
+$('#scrollToTop').click(function(){
+    $('html, body').scrollTop(0)
+});
